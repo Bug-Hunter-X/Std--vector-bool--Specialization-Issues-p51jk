@@ -1,0 +1,1 @@
+std::vector<bool> vec; // ... some operations on vec ... if (vec.empty()) {  // Check for emptiness }  This code might seem correct, but it can lead to unexpected behavior because std::vector<bool> is specialized, and its elements aren't stored as individual bools. Operations might not behave as expected for a regular vector.
